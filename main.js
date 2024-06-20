@@ -15,12 +15,12 @@ function createCards(users) {
         const title = document.createElement('h2');
         title.textContent = `Title: ${user.title}`;
 
-        const description = document.createElement('p');
-        description.textContent = `Price: ${user.description}`;
+        const price = document.createElement('p');
+        price.textContent = `Price: ${user.price}`;
 
         card.appendChild(img)
         card.appendChild(title);
-        card.appendChild(description);
+        card.appendChild(price);
 
         container.appendChild(card);
     })
